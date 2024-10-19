@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yerassyl Omirzak</title>
+    <link rel="website icon" type="png" href="images/websiteIcon.jpg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/mainHeader.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Icons Fontawesome -->
+    <script src="https://kit.fontawesome.com/977321685b.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+    <header>
+        <div class="container">
+            <nav class="menu">
+                <img src="images/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#family">Family</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#hobbie">Hobbies</a></li>
+                    <li><a href="#contact_block">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>You are Welcome!</p>
+                <h1>Hi, I'm <span>Yerassyl</span><br>Omirzak</h1>
+            </div>
+        </div>
+    </header>
+    <!------------- about --------------> 
+    <section class="about" id="about">
+        <div class="container">
+             <div class="row">
+                <div class="col-1">
+                    <img src="images/yeraPhoto.jpg" alt="My Photo">
+                </div>
+                <div class="col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p>My name is Yerassyl Omirzak. I'm 19. I was born in Shymkent.Now I'm studying at SDU University. Major is Information Systems. Some fact about me: I have a friver licence. I can play on guitar and dombyra. Also i could play on saksaphone, but with some reason i stopped. Maybe I already forget. If I say about my behavior. I'm very friendly person. I can help anyone if they need it.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-title" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('friends')">Friends</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend</span><br> Web development</li>
+                            <li><span>UX/UI</span><br>Designed Web/App Interfaces</li>
+                            <li><span>iOS dev</span><br>iOS mobile app development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - current</span><br>Frontend web development</li>
+                            <li><span>2024 - current</span><br>UX/UI designed Web/App Interfaces</li>
+                            <li><span>2023 - 2024</span><br>iOS mobile app development</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="friends">
+                        <ul>
+                            <li><span>Serikbolsyn Assanbayev</span><br> Major: Informatics teacher. City: Shymkent</li>
+                            <li><span>Diyar Ilyassov</span><br> Major: Information systems. City: Astana</li>
+                            <li><span>Yerassyl Yerkin</span><br> Major: Computer Science. City: Almaty</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- -------family-------- -->
+    <section class="family" id="family">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <h3 class="sub-title">Members</h3>
+                    <ul class="fam-list">
+                        <li class="fam-members active-member" onclick="opentab('roza')">Roza</li>
+                        <li class="fam-members" onclick="opentab('akbota')">Akbota</li>
+                        <li class="fam-members" onclick="opentab('aida')">Aida</li>
+                        <li class="fam-members" onclick="opentab('asylzat')">Asylzat</li>
+                        <li class="fam-members" onclick="opentab('accent')">Accent</li>
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="member_contents active-content" id="roza">
+                        <img src="images/mother.JPG" alt="mother">
+                        <div class="info">
+                            <h3 class="">Roza Mirzamuratova</h3>
+                            <p>She was born in . Its near to Saragash. Now she lives in Shymkent. She is 46 years old. Lately she got PhD degree. She was in 5-8 countries.She's ru is Sirgeli.</p>
+                            <a href="https://www.instagram.com/rmirzamuratova"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member_contents" id="akbota">
+                        <img src="images/akbota.jpg" alt="mother">
+                        <div class="info">
+                            <h3 class="">Akbota Sharapova</h3>
+                            <p>She was born in Shymkent. Its third big city in Kazakhstan. Now she lives in Almaty. She married. She has slim husband and one honey son. She is 23 years old. </p>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member_contents" id="aida">
+                        <img src="images/aidon.jpg" alt="mother">
+                        <div class="info">
+                            <h3 class="">Aida Sharapova</h3>
+                            <p>She was born in Shymkent. Its third big city in Kazakhstan. Now she lives in Almaty. Lately she finished her bachelor degree. Now she works on visa maker company. She is 21 years old.</p>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member_contents" id="asylzat">
+                        <img src="images/asi.jpg" alt="mother">
+                        <div class="info">
+                            <h3 class="">Asylzat Umirzah</h3>
+                            <p>She was born in Shymkent. Its third big city in Kazakhstan. Now she lives in Shymkent. She studys on 9 class in the school. She is 14 years old.</p>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="member_contents" id="accent">
+                        <img src="images/accent.jpg" alt="mother">
+                        <div class="info">
+                            <h3>Hyundai Accent</h3>
+                            <p>He is from Korea. But lives in Shymkent. He is 6 years old. Engine is 1.6. Good car for city. Economy and reliable car.</p>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------education------------- -->
+    <section class="edu" id="edu">
+        <div class="container">
+            <h2 class="sub-title">My Educations</h2>
+            <div class="educations-list">
+                <div>
+                    <img src="images/sduu.jpg" alt="">
+                    <h3>University</h3>
+                    <ul>
+                        <li>2022 - Current</li>
+                        <li>Name: SDU University</li>
+                        <li>Major: Information Systems</li>
+                        <li>City: Kaskelen</li>
+                        <li>Address: Abylaikhan 1/1</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/school3.JPG" alt="">
+                    <h3>School</h3>
+                    <ul>
+                        <li>2011 - 2022</li>
+                        <li>Name: N29 A.Moldagulova</li>
+                        <li>City: Shymkent</li>
+                        <li>School: Midle school</li>
+                        <li>Address: Gagarina,22</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="images/mus.jpg" alt="">
+                    <h3>Music School</h3>
+                    <ul>
+                        <li>2017 - 2021</li>
+                        <li>Name: N2 Music school</li>
+                        <li>Instrument: Dombyra</li>
+                        <li>City: Shymkent</li>
+                        <li>Address: Gagarina,13</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------hobbies-------------- -->
+    <section class="hobbie" id="hobbie">
+        <div class="contrainer">
+            <h2 class="sub-title">My Hobbies</h2>
+            <div class="hobbies-list">
+                <div class="hobbie-content">
+                    <img src="images/hob_dombyra.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Playing Dombyra</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_car.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Driving Car</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_football.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3 >Playing Football</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_gitar.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Playing Gitar</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_hiking.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Hiking</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_readingbook.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Reading Book</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_horseriding.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Horse Riding</h3>
+                    </div>
+                </div>
+                <div class="hobbie-content">
+                    <img src="images/hob_sport.jpg" alt="mother">
+                    <div class="info hobbie_name">
+                        <h3>Traning</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------contact------------- -->
+    <section class="contact_block" id="contact_block">
+        <div class="container">
+            <div class="row">
+                <div class="contact_left">
+                    <h2 class="sub-title">Contact Me</h2>
+                    <h3>Omirzak Yerassyl</h3>
+
+                    <p><i class="fa-solid fa-envelope"></i>220103360@stu.sdu.edu.kz</p>
+                    <p><i class="fa-solid fa-phone"></i>87072016113</p>
+                    <div class="social_icons">
+                        <a href="http://instagram.com/yerassill" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://t.me/yerassill" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+                <div class="contact_right">
+                    <div class="medium_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.034149153334!2d76.66709307636629!3d43.20877307112657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x388345a35db0962d%3A0xd9437541092dd062!2sSDU!5e0!3m2!1sen!2skz!4v1728834286327!5m2!1sen!2skz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="small_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.0907596393213!2d76.66700542636623!3d43.20758567112676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2sSDU%20University!5e0!3m2!1sen!2skz!4v1728841595705!5m2!1sen!2skz" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Yerassyl. Made with <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </section>
+
+    <!-- ----------about me script------------ -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-title")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-title")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu(){
+            sidemenu.style.right = "0px";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+
+<!-- ------family script-------- -->
+<script>
+    var fammembers = document.getElementsByClassName("fam-members")
+    var member_contents = document.getElementsByClassName("member_contents")
+    function opentab(name){
+        for(fammember of fammembers){
+            fammember.classList.remove("active-member")
+        }
+        for(member_content of member_contents){
+            member_content.classList.remove("active-content")
+        }
+        event.currentTarget.classList.add("active-member")
+        document.getElementById(name).classList.add("active-content")
+    }
+</script>
+
+<!-- ---------contact sript------------ -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw3ksbIumzL3wBKnSjFLd7Emi4X8FoitA3fQbvyRv647Pet9S8VvltIz1IvJhcME0f5IA/exec '
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+
+
+</body>
+</html>
